@@ -1,0 +1,25 @@
+{
+  "name": "phaser_mom_sokoban",
+  "version": "0.0.1",
+  "description": "A basic Sokoban game made with Phaser and some free assets found over the Internet.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/victorino-s/phaser_mom_sokoban.git"
+  },
+  "keywords": [
+    "sokoban",
+    "phaser",
+    "js",
+    "javascript"
+  ],
+  "author": "victorino",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/victorino-s/phaser_mom_sokoban/issues"
+  },
+  "homepage": "https://github.com/victorino-s/phaser_mom_sokoban#readme"
+}
