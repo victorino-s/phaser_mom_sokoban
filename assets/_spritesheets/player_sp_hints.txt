@@ -1,0 +1,9 @@
+2496 width
+2724 heigth
+
+1 image :
+ 416 width
+ 454 height
+
+Walk : 0 - 19
+Idle : 20 - 35

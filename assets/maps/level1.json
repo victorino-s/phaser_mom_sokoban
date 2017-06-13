@@ -13,6 +13,27 @@
          "y":0
         }, 
         {
+         "draworder":"topdown",
+         "name":"spawn",
+         "objects":[
+                {
+                 "height":1,
+                 "id":11,
+                 "name":"",
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":1,
+                 "x":320,
+                 "y":446
+                }],
+         "opacity":1,
+         "type":"objectgroup",
+         "visible":true,
+         "x":0,
+         "y":0
+        }, 
+        {
          "data":"AwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAAAAAAAAAAAAwAAAAMAAAADAAAAAwAAAAAAAAAAAAAAAwAAAAMAAAADAAAAAwAAAAAAAAAAAAAAAAAAAAAAAAADAAAAAwAAAAAAAAAAAAAAAAAAAAAAAAADAAAAAwAAAAAAAAAAAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAA",
          "encoding":"base64",
          "height":7,
@@ -26,7 +47,6 @@
         }, 
         {
          "draworder":"topdown",
-         "height":7,
          "name":"objectifs",
          "objects":[
                 {
@@ -56,13 +76,11 @@
          "opacity":1,
          "type":"objectgroup",
          "visible":true,
-         "width":6,
          "x":0,
          "y":0
         }, 
         {
          "draworder":"topdown",
-         "height":7,
          "name":"caisses",
          "objects":[
                 {
@@ -92,11 +110,10 @@
          "opacity":1,
          "type":"objectgroup",
          "visible":true,
-         "width":6,
          "x":0,
          "y":0
         }],
- "nextobjectid":11,
+ "nextobjectid":13,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tileheight":128,
@@ -116,6 +133,7 @@
          "transparentcolor":"#ff00ff"
         }],
  "tilewidth":128,
- "version":1,
+ "type":"map",
+ "version":"2017.05.16",
  "width":6
 }
