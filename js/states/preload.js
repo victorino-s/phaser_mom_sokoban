@@ -2,6 +2,10 @@ var preloadState = {
 	preload: function () {
 		this.load.image('map_tileset', '../../assets/_spritesheets/map_tileset.png');
 		this.load.tilemap('lvl1', "../../assets/maps/level1.json", null, Phaser.Tilemap.TILED_JSON);
+		this.load.tilemap('lvl2', "../../assets/maps/level2.json", null, Phaser.Tilemap.TILED_JSON);
+		this.load.tilemap('lvl3', "../../assets/maps/level3.json", null, Phaser.Tilemap.TILED_JSON);
+		this.load.tilemap('lvl4', "../../assets/maps/level4.json", null, Phaser.Tilemap.TILED_JSON);
+		this.load.tilemap('lvl5', "../../assets/maps/level5.json", null, Phaser.Tilemap.TILED_JSON);
 
 		this.load.spritesheet('player_spritesheet', '../../assets/_spritesheets/girl_sp.png', 104, 113.5);
 

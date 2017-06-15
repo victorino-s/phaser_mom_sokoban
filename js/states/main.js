@@ -19,6 +19,7 @@ var mainState = {
 		this._map.initializeObjectifs();
 		this._player = new Player(this.game, this);
 		this._player.initialize();
+		this._player.initializeAnimations();
 		game.camera.follow(this._player);
 		/* -- Collisions -- */
 		/*		this._wallsCG = game.physics.arcade.createCollisionGroup();
@@ -44,7 +45,7 @@ var mainState = {
 		
 		this._map.update();
 	},
-
+/*
 	render: function() {
 		game.debug.body(this._player);
 		this._map.objectifs.forEach(function(element) {
@@ -53,9 +54,9 @@ var mainState = {
 		}, this);
 		
 	},
-
+*/
 	slowPlayer: function() {
-		console.log('solw');
+		
 		this._player.speed = 200;
 	}
 }

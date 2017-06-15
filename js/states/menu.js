@@ -40,22 +40,27 @@ var menuState = {
 
 		this.lvlone.events.onInputDown.add(function () {
 			choosedLevel = 1;
+			this.start();
 		}, this);
 
 		this.lvltwo.events.onInputDown.add(function () {
 			choosedLevel = 2;
+			this.start();
 		}, this);
 
 		this.lvlthree.events.onInputDown.add(function () {
 			choosedLevel = 3;
+			this.start();
 		}, this);
 
 		this.lvlfour.events.onInputDown.add(function () {
 			choosedLevel = 4;
+			this.start();
 		}, this);
 
 		this.lvlfive.events.onInputDown.add(function () {
 			choosedLevel = 5;
+			this.start();
 		}, this);
 
 		var enterKey = game.input.keyboard.addKey(Phaser.Keyboard.ENTER);

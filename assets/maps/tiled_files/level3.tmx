@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="9" height="6" tilewidth="128" tileheight="128" nextobjectid="14">
+ <tileset firstgid="1" name="map_tileset" tilewidth="128" tileheight="128" tilecount="20" columns="5">
+  <image source="../../_spritesheets/map_tileset.png" trans="ff00ff" width="640" height="512"/>
+ </tileset>
+ <layer name="ground" width="9" height="6">
+  <data encoding="base64">
+   CgAAAAoAAAAKAAAACgAAAAoAAAAKAAAACgAAAAoAAAAKAAAACgAAAAoAAAAKAAAADwAAAA8AAAAKAAAACgAAAAoAAAAKAAAACgAAAA8AAAAPAAAADwAAAA8AAAAPAAAADwAAAA8AAAAKAAAACgAAAA8AAAAKAAAADwAAAA8AAAAKAAAADwAAAA8AAAAKAAAACgAAAA8AAAAPAAAADwAAAA8AAAAKAAAADwAAAA8AAAAKAAAACgAAAAoAAAAKAAAACgAAAAoAAAAKAAAACgAAAAoAAAAKAAAA
+  </data>
+ </layer>
+ <objectgroup name="spawn">
+  <object id="5" x="832" y="576"/>
+ </objectgroup>
+ <objectgroup name="coll_objects">
+  <object id="6" x="256" y="4" width="508" height="118"/>
+  <object id="7" x="29.3333" y="128" width="353.333" height="126.667"/>
+  <object id="8" x="0" y="204" width="122" height="562"/>
+  <object id="9" x="126" y="640" width="1022" height="124"/>
+  <object id="10" x="642" y="384" width="124" height="252"/>
+  <object id="11" x="257.333" y="384" width="122.667" height="125.333"/>
+  <object id="12" x="1028" y="252" width="124" height="412"/>
+  <object id="13" x="641.333" y="94.6667" width="510.667" height="158.667"/>
+ </objectgroup>
+ <layer name="map_render" width="9" height="6">
+  <data encoding="base64">
+   AwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAAAAAAAAAAADAAAAAwAAAAMAAAADAAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADAAAAAwAAAAAAAAADAAAAAAAAAAAAAAADAAAAAAAAAAAAAAADAAAAAwAAAAAAAAAAAAAAAAAAAAAAAAADAAAAAAAAAAAAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAAAwAAAAMAAAADAAAA
+  </data>
+ </layer>
+ <objectgroup name="objectifs">
+  <object id="1" gid="18" x="256" y="640" width="128" height="128"/>
+  <object id="2" gid="18" x="512" y="640" width="128" height="128"/>
+ </objectgroup>
+ <objectgroup name="caisses">
+  <object id="3" gid="11" x="768" y="384" width="128" height="128"/>
+  <object id="4" gid="11" x="768" y="512" width="128" height="128"/>
+ </objectgroup>
+</map>

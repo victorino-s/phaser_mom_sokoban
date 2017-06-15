@@ -6,7 +6,28 @@ var Map = function (game, state) {
 	this.validCaisses = [];
 	this.renderLayer = null;
 	this.collideLayer = null;
-	Phaser.Tilemap.call(this, game, 'lvl1');
+	this.gamelvl = null;
+	switch(choosedLevel) {
+		case 1:
+		this.gamelvl = 'lvl1';
+		break;
+		case 2:
+		this.gamelvl = 'lvl2';
+		break;
+		case 3:
+		this.gamelvl = 'lvl3';
+		break;
+		case 4:
+		this.gamelvl = 'lvl4';
+		break;
+		case 5:
+		this.gamelvl = 'lvl5';
+		break;
+		default:
+		this.gamelvl = 'lvl1';
+		break
+	}
+	Phaser.Tilemap.call(this, game, this.gamelvl);
 	this.addTilesetImage('map_tileset', 'map_tileset');
 }
 
@@ -63,7 +84,7 @@ Map.prototype.update = function () {
 	this.caisses.forEach(function(caisse) {
 		for(var i = 0; i < this.objectifs.children.length; i++) {
 			if(caisse.overlap(this.objectifs.children[i].children[0])) {
-				console.log(caisse.name);
+				//console.log(caisse.name);
 				caisse.isValid = true;
 				break;
 			} else {

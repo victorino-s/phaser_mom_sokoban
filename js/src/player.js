@@ -36,6 +36,12 @@ var Player = function (game, state) {
 	this.downButton.inputEnabled = true;
 	this.restartButton.inputEnabled = true;
 
+	this.leftButton.fixedToCamera = true;
+	this.rightButton.fixedToCamera = true;
+	this.upButton.fixedToCamera= true;
+	this.downButton.fixedToCamera = true;
+	this.restartButton.fixedToCamera = true;
+
 	// LEFT
 	this.leftButton.events.onInputDown.add(function () {
 		this.movingLeft = true;
@@ -91,8 +97,10 @@ var Player = function (game, state) {
 Player.prototype = Object.create(Phaser.Sprite.prototype);
 Player.prototype.constructor = Player;
 
-Player.prototype.initializeArrowKeys = function () {
-
+Player.prototype.initializeAnimations = function () {
+	this.animations.add('walk', [0,1,2,3,4,6,7,8,9,10,12,13,14,15,16,18,19,20,21,22], 5,true);
+	this.animations.add('idle', [5,11,17,23,24,25,26,27,28,29,30,31,32,33,34,35], 5, true);
+	this.animations.play('idle');
 }
 
 Player.prototype.initialize = function () {
@@ -128,11 +136,16 @@ Player.prototype.update = function () {
 		this.body.velocity.y = 0;
 	}
 
+	if(this.body.velocity.x != 0 || this.body.velocity.y != 0) {
+		this.animations.play('walk');
+	} else {
+		this.animations.play('idle');
+	}
 	game.physics.arcade.overlap(this, this.state._map.objectifs, this.overlapObjectifs, null, this);
 
 	// For collisions,  move with velocity
 }
 
 Player.prototype.overlapObjectifs = function (player, objectif) {
-	console.log('overlap objectfi');
+	//console.log('overlap objectfi');
 }
