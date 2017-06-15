@@ -1,3 +1,4 @@
+var choosedLevel = 0;
 var game = new Phaser.Game(720,1280, Phaser.AUTO, 'game-container');
 
 game.state.add('preload', preloadState);

@@ -8,6 +8,10 @@ var preloadState = {
 		this.load.image('caisse', '../../assets/sprites/crate_02.png');
 		this.load.image('caisse_valide', '../../assets/sprites/crate_12.png');
 		this.load.image('cible', '../../assets/sprites/environment_01.png');
+		this.load.image('objbody', '../../assets/ui/test.png');
+		this.load.image('arrowKey', '../../assets/ui/arrowkey.png');
+		this.load.image('restartKey', '../../assets/ui/restart.png');
+		this.load.image('chooseLevelBloc', '../../assets/ui/chooseLevel.png');
 	},
 
 	create: function(){
